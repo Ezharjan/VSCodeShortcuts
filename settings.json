@@ -287,6 +287,18 @@
         "editor.formatOnType": true
     },
     "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{column_limit: 200}"
+    ],
+    // autopep8
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=200"
+    ],
     "python.diagnostics.sourceMapsEnabled": true,
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "editor.guides.bracketPairs": true
 }
